@@ -1,0 +1,43 @@
+.model simple_adder
+.inputs top^a top^b top^cin
+.outputs top^s top^cout
+
+.names gnd
+.names unconn
+.names vcc
+1
+
+.names top^ADD~1^LOGICAL_AND~5 top^ADD~0^ADDER_FUNC~12 gnd top^ADD~1^ADDER_FUNC~6
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^LOGICAL_AND~11 gnd gnd top^ADD~0^ADDER_FUNC~12
+001 1
+010 1
+100 1
+111 1
+
+.names top^a top^b top^ADD~0^LOGICAL_XOR~10
+01 1
+10 1
+
+.names top^ADD~0^LOGICAL_XOR~10 top^cin top^ADD~1^LOGICAL_XOR~4
+01 1
+10 1
+
+.names top^ADD~0^LOGICAL_XOR~10 top^cin top^ADD~1^LOGICAL_AND~5
+11 1
+
+.names top^a top^b top^ADD~0^LOGICAL_AND~11
+11 1
+
+.names top^ADD~1^LOGICAL_XOR~4 top^s
+1 1
+
+.names top^ADD~1^ADDER_FUNC~6 top^cout
+1 1
+
+.end
+
