@@ -26,8 +26,8 @@ syn keyword BLIFStatement   .output_required .default_output_required
 syn keyword BLIFStatement   .input_drive .default_input_drive .max_input_load
 syn keyword BLIFStatement   .default_max_input_load .output_load
 syn keyword BLIFStatement   .default_output_load
-#syn keyword BLIFConditional if else case casex casez default endcase
-#syn keyword BLIFRepeat      forever repeat while for
+"syn keyword BLIFConditional if else case casex casez default endcase
+"syn keyword BLIFRepeat      forever repeat while for
 
 syn keyword BLIFTodo contained TODO FIXME
 
